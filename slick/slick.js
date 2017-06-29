@@ -2371,7 +2371,8 @@
     Slick.prototype.selectHandler = function(event) {
 
         var _ = this;
-
+        event.preventDefault();
+        
         var targetElement =
             $(event.target).is('.slick-slide') ?
                 $(event.target) :
